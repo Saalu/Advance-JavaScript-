@@ -1,0 +1,57 @@
+
+.container{
+   display: flex;
+   min-height: 100vh;
+   justify-content: center;
+   align-items:center;
+   color:#333;
+}
+
+.container form{
+    background:#eeee;
+    padding: 1rem;
+    width:360px;
+    border-radius:6px;
+}
+
+form select > option{
+    margin-bottom: 20px;
+    padding: .5rem;
+    border:1px solid #666;
+}
+
+form .level-title, select{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: .2rem;
+}
+form label, .btn{
+    font-weight: bold;
+}
+
+form .level-title{
+
+}
+
+form h2{
+    text-align: center;
+    color:#333;
+}
+
+
+.btn{
+    width: 100%;
+margin-top: 10px;
+background: lightgreen;
+padding: .5rem;
+border:none;
+outline: none;
+border-radius: 4px;
+box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+}
+
+.btn:active{
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+
+}
