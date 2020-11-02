@@ -1,0 +1,52 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+:root{
+    --range: orangered;
+    --dark: #3333;
+    --light: #4e4e4e;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:red;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+/* styling goes here */
+
+
+
+
+
+
+
+
+
+footer{
+flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background: lightblue;
+    font-weight: bold;
+    color:#333;
+
+}
+
+footer span{
+    color: orange;
+}
