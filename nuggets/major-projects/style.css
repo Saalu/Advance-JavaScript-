@@ -1,4 +1,8 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .container{
    display: flex;
    min-height: 100vh;
@@ -9,10 +13,40 @@
 
 .container form{
     background:#eeee;
-    padding: 1rem;
     width:360px;
     border-radius:6px;
 }
+.main{
+    padding: 1rem;
+
+}
+
+form h2{
+    background:#333;
+    text-align: center;
+    color:#eeee;
+    padding: .5rem 0;
+    border-radius: 4px  4px  0  0 ;
+}
+
+
+/* ======Error Message ========== */
+form  .error p{
+    background:rgba(240, 128, 128, 0.342);
+    color: brown;
+    text-align: center;
+    border: 1px solid brown;
+    width: 70%;
+    padding: .5rem 0;
+    margin-bottom: 10px;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+} /*End */
 
 form select > option{
     margin-bottom: 20px;
@@ -30,15 +64,6 @@ form label, .btn{
     font-weight: bold;
 }
 
-form .level-title{
-
-}
-
-form h2{
-    text-align: center;
-    color:#333;
-}
-
 
 .btn{
     width: 100%;
@@ -54,4 +79,31 @@ box-shadow: 2px 2px 3px rgba(0,0,0,.3);
 .btn:active{
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 
+}
+
+/* ========Show Results ========== */
+#result {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   margin: 10px 0;
+   font-size: large;
+   
+}
+#result div{
+    border: 1px solid #03A9F4;
+    padding-bottom: .5rem ;
+    width: 80%;
+    text-align: center;
+}
+
+#result .header{
+    background:#03A9F4;
+    margin-top: 0;
+    padding: .5rem 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#result .level{
+  text-transform: capitalize;
 }
